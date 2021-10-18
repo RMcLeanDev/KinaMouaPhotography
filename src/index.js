@@ -1,17 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import './index.scss';
+import App from './components/App';
+import { Provider } from 'react-redux';
+import { HashRouter } from 'react-router-dom';
+import thunkMiddleware from 'redux-thunk';
+import {createStore, applyMiddleware} from 'redux';
+import rootReducer from './reducers';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+const store = createStore(rootReducer, applyMiddleware(thunkMiddleware));
+export {store};
+
+const render = (Component) => { 
+  ReactDOM.render(
+  <HashRouter>
+    <Provider store={store}>
+      <Component />
+    </Provider>
+  </HashRouter>,
   document.getElementById('root')
-);
+  );
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+render(App)
+
+if (module.hot) {
+  module.hot.accept('./components/App', () => {
+    render(App);
+  });
+}
