@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500&display=swap');
+
+.homeComponent{
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    grid-gap: 10px;
+    margin-top: 25px;
+    font-family: 'Cormorant Garamond';
+    img{
+        max-width: 30vw;
+    }
+    .rightHome{
+        max-width: 40vw;
+        p{
+            font-size: 40px;
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            font-weight: 500;
+            font-size: 100px;
+            margin: 0;
+            padding: 0;
+        }
+        hr{
+            border: 1px solid black;
+        }
+    }
+}

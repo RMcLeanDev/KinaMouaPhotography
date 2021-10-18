@@ -1,6 +1,8 @@
 import React from 'react';
 import {store} from '../index';
 import {testFunction} from '../actions/index';
+import kinaPhoto from '../assets/kina.JPG';
+import '../scss/Home.scss';
 
 function Home(props){
 
@@ -9,9 +11,15 @@ function Home(props){
   }
 
   return(
-    <div>
-      <h1>Welcome to the home component. My Dog is super tired!</h1>
-      <button onClick={testRedux}>Test Reducer Function. Open console to see console log.</button>
+    <div className="homeComponent">
+      <div className="leftHome">
+        <img src={kinaPhoto}/>
+      </div>
+      <div className="rightHome">
+        <p>Hello, </p>
+        <hr/>
+        <h1>I'm a photographer based out of Los angeles, CA. I'm lucky to travel the world documenting this beautiful planet of ours.</h1> 
+      </div>
     </div>
   )
 }
