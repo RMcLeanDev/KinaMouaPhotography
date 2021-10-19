@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500&display=swap');
+@import './Mixin.scss';
 
 .homeComponent{
     display: flex;
@@ -7,6 +8,7 @@
     grid-gap: 10px;
     margin-top: 25px;
     font-family: 'Cormorant Garamond';
+    align-items: center;
     img{
         max-height: 70vh;
     }
@@ -28,10 +30,25 @@
             border: 1px solid black;
         }
     }
+    @include mQ(1150px){
+        flex-direction: column;
+        align-items: center;
+        grid-gap: 50px;
+        img{
+            max-height: 70vh;
+            max-width: 90vw;
+        }
+        .rightHome{
+            max-width: 90vw;
+        }
+    }
 }
 
 .downArrow{
-    margin-top: 50px;
+    margin: 100px 0;
     max-width: 60vw;
     max-height: 80vh;
+    @include mQ(1150px){
+        height: 100px;
+    }
 }
