@@ -3,6 +3,7 @@ import {store} from '../index';
 import {testFunction} from '../actions/index';
 import kinaPhoto from '../assets/kina.JPG';
 import '../scss/Home.scss';
+import downArrow from '../assets/downArrow.png';
 
 function Home(props){
 
@@ -11,14 +12,23 @@ function Home(props){
   }
 
   return(
-    <div className="homeComponent">
-      <div className="leftHome">
-        <img src={kinaPhoto}/>
+    <div>
+      <div className="homeComponent">
+        <div className="leftHome">
+          <img src={kinaPhoto}/>
+        </div>
+        <div className="rightHome">
+          <p>Hello, </p>
+          <hr/>
+          <h1>I'm a photographer based out of Vancouver, WA. I find joy in capturing life's most precious moments.</h1> 
+        </div>
       </div>
-      <div className="rightHome">
-        <p>Hello, </p>
-        <hr/>
-        <h1>I'm a photographer based out of Los angeles, CA. I'm lucky to travel the world documenting this beautiful planet of ours.</h1> 
+      <div>
+        <img src={downArrow} className="downArrow"/>
+        <h1><em>Recent Work</em></h1>
+        <div className="recentWork">
+
+        </div>
       </div>
     </div>
   )

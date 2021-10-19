@@ -8,7 +8,7 @@
     margin-top: 25px;
     font-family: 'Cormorant Garamond';
     img{
-        max-width: 30vw;
+        max-height: 70vh;
     }
     .rightHome{
         max-width: 40vw;
@@ -16,6 +16,7 @@
             font-size: 40px;
             margin: 0;
             padding: 0;
+
         }
         h1{
             font-weight: 500;
@@ -27,4 +28,10 @@
             border: 1px solid black;
         }
     }
+}
+
+.downArrow{
+    margin-top: 50px;
+    max-width: 60vw;
+    max-height: 80vh;
 }
