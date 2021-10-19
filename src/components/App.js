@@ -8,8 +8,12 @@ import '../App.scss';
 import About from './About';
 import Header from './Header';
 import Contact from './Contact';
+import AOS from 'aos';
 
 function App(props) {
+  
+  AOS.init();
+  AOS.refresh();
 
   console.log(props)
   

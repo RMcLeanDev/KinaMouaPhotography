@@ -4,6 +4,7 @@ import {testFunction} from '../actions/index';
 import kinaPhoto from '../assets/kina.JPG';
 import '../scss/Home.scss';
 import downArrow from '../assets/downArrow.png';
+import RecentWork from './RecentWork';
 
 function Home(props){
 
@@ -26,9 +27,7 @@ function Home(props){
       <div>
         <img src={downArrow} className="downArrow"/>
         <h1><em>Recent Work</em></h1>
-        <div className="recentWork">
-
-        </div>
+        <RecentWork/>
       </div>
     </div>
   )

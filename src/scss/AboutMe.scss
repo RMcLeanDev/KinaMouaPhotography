@@ -1,0 +1,14 @@
+.aboutMe{
+    display: flex;
+    width: 60vw;
+    height: 90vh;
+    align-items: center;
+    margin: auto;
+    em{
+        font-weight: 200;
+    }
+    h2{
+        font-weight: 400;
+        font-size: 50px;
+    }
+}

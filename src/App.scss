@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500&display=swap');
 
 .header{
+  z-index: 1;
   border-bottom: 1px solid black;
   display: flex;
   justify-content: space-between;
   padding: 0 50px;
   align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: #e0e0db;
   a{
     margin: 0px 10px;
     padding: 10px 0;
