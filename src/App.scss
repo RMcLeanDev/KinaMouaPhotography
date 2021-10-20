@@ -6,11 +6,11 @@
   border-bottom: 1px solid black;
   display: flex;
   justify-content: space-between;
-  padding: 0 50px;
   align-items: center;
   position: sticky;
   top: 0;
   background-color: #e0e0db;
+  width: 100vw;
   a{
     margin: 0px 10px;
     padding: 10px 0;
@@ -54,10 +54,10 @@
       display: none;
     }
     .mobileHeader{
-      display: block;
-      height: 75px;
-      margin: auto;
-      
+      display: flex;
+      width: 100vw;
+      justify-content: space-around;
+      align-items: center;
     }
     .mobileHide{
       display: none;
@@ -74,24 +74,16 @@
       left: 0;
       overflow: auto;
     }
-    #nav-icon2{
-      position: fixed;
-      right: 25px;
-      top: 10px;
-    }
-    .linkHomeMobile{
-      position: fixed;
-      left: 10px;
-      top: 8px;
-      a{
-        font-size: 35px;
-      }
-    }
     img{
       height: 50px;
       margin-top: 50px;
       &:hover{
         cursor: pointer;
+      }
+    }
+    .linkHomeMobile{
+      a{
+        font-size: 25px;
       }
     }
     .insideMobileHeader{
