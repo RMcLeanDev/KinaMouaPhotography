@@ -48,7 +48,8 @@
     margin: 100px 0;
     max-width: 60vw;
     max-height: 80vh;
+    width: 150px;
     @include mQ(1150px){
-        height: 100px;
+        width: 100px;
     }
 }

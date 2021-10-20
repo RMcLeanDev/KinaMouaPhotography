@@ -9,9 +9,11 @@ import About from './About';
 import Header from './Header';
 import Contact from './Contact';
 import AOS from 'aos';
+import Prices from './Prices';
+import Testimonials from './Testimonials';
 
 function App(props) {
-  
+
   AOS.init();
   AOS.refresh();
 
@@ -24,6 +26,8 @@ function App(props) {
         <Route exact path ='/' component={Home}/>
         <Route exact path ='/About' component={About}/>
         <Route exact path ='/Contact' component={Contact}/>
+        <Route exact path ='/Prices' component={Prices}/>
+        <Route exact path ='/Testimonials' component={Testimonials}/>
         <Route component={Error404}/>
       </Switch>
     </div>

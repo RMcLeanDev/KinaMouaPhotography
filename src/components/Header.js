@@ -12,7 +12,7 @@ function Header(){
       <div className="rightSideHeader">
         <Link to='/About'>About</Link>
         <Link to='/Contact'>Book Me</Link>
-        <a>Prices</a>
+        <Link to='/Prices'>Prices</Link>
         <a>Testimonials</a>
         <a><img src={instagram}/></a>
       </div>
