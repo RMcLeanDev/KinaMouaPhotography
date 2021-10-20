@@ -46,11 +46,13 @@ function Header(){
             <span></span>
           </div>
           <div className={headerDisplay.menu}>
-            <Link exact to='/About' onClick={() => setShowHide(false)}><h3>About</h3></Link>
-            <Link to='/Contact' onClick={() => setShowHide(false)}><h3>Book Me</h3></Link>
-            <Link to='/Prices' onClick={() => setShowHide(false)}><h3>Prices</h3></Link>
-            <Link to='/Testimonials' onClick={() => setShowHide(false)}><h3>Testimonials</h3></Link>
-            <a target="_blank" href="https://www.instagram.com/kinamoua/?hl=en"><img src={instagram}/></a>
+            <div className="insideMobileHeader">
+              <Link exact to='/About' onClick={() => setShowHide(false)}><h3>About</h3></Link>
+              <Link to='/Contact' onClick={() => setShowHide(false)}><h3>Book Me</h3></Link>
+              <Link to='/Prices' onClick={() => setShowHide(false)}><h3>Prices</h3></Link>
+              <Link to='/Testimonials' onClick={() => setShowHide(false)}><h3>Testimonials</h3></Link>
+              <a target="_blank" href="https://www.instagram.com/kinamoua/?hl=en"><img src={instagram}/></a>
+            </div>
         </div>
       </div>
     </div>
