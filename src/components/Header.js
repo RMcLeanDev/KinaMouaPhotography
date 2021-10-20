@@ -17,8 +17,10 @@ function Header(){
 
   if(showHide === false){
     headerDisplay = {header: "hide", menu: "mobileHide"};
+    document.getElementsByTagName("body")[0].style = "position: none";
   } else if(showHide){
     headerDisplay = {header: "open", menu: "mobileShow"};
+    document.getElementsByTagName("body")[0].style = "position: fixed";
   }
 
   return(
