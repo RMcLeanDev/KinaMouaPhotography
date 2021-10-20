@@ -31,7 +31,7 @@ function Header(){
         <Link to='/Contact'>Book Me</Link>
         <Link to='/Prices'>Prices</Link>
         <Link to='/Testimonials'>Testimonials</Link>
-        <a><img src={instagram}/></a>
+        <a target="_blank" href="https://www.instagram.com/kinamoua/?hl=en"><img src={instagram}/></a>
       </div>
       <div className="mobileHeader">
         <div className="linkHomeMobile">
@@ -50,6 +50,7 @@ function Header(){
             <Link to='/Contact' onClick={() => setShowHide(false)}><h3>Book Me</h3></Link>
             <Link to='/Prices' onClick={() => setShowHide(false)}><h3>Prices</h3></Link>
             <Link to='/Testimonials' onClick={() => setShowHide(false)}><h3>Testimonials</h3></Link>
+            <a target="_blank" href="https://www.instagram.com/kinamoua/?hl=en"><img src={instagram}/></a>
         </div>
       </div>
     </div>
