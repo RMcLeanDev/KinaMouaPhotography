@@ -35,6 +35,7 @@
     display: flex;
     align-items: center;
     grid-gap: 16px;
+    margin-right: 50px;
     a{
       font-size: 30px;
       padding: 0;
@@ -49,7 +50,7 @@
     display: none;
   }
   @include mQ(1150px){
-    height: 60px;
+    padding: 10px 0;
     .desktopHeader{
       display: none;
     }
@@ -68,9 +69,9 @@
     .mobileShow{
       background-color: #e0e0db;
       width: 100vw;
-      height: calc(100vh - 61px);
+      height: calc(100vh - 67px);
       position: fixed;
-      top: 61px;
+      top: 66px;
       left: 0;
       overflow: auto;
     }
