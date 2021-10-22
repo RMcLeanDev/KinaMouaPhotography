@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500&display=swap');
 @import 'scss/Mixin.scss';
 
+hr{
+  border: 1px solid #deb8b8;
+  box-shadow: 0 0 10px #deb8b8;
+}
+
 .header{
   z-index: 1;
   border-bottom: 1px solid black;

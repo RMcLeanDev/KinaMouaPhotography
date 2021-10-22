@@ -25,9 +25,6 @@
             margin: 0;
             padding: 0;
         }
-        hr{
-            border: 1px solid black;
-        }
     }
     @include mQ(1150px){
         flex-direction: column;
