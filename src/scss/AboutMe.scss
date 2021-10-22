@@ -22,4 +22,9 @@
             font-size: 35px;
         }
     }
+    @include mQ(475px){
+        h2{
+            font-size: 25px;
+        }
+    }
 }
