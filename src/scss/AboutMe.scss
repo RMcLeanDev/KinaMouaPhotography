@@ -1,13 +1,13 @@
 @import './Mixin.scss';
 
 .aboutMe{
-    display: flex;
+    display: grid;
     width: 60vw;
     height: 90vh;
     align-items: center;
     margin: auto;
-    em{
-        font-weight: 200;
+    h1{
+        font-weight: 400;
     }
     h2{
         font-weight: 400;

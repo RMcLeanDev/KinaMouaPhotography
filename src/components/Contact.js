@@ -23,7 +23,7 @@ function Contact(){
     return(
         <div className="contactMe">
             <div>
-                <h1><em>Contact</em></h1>
+                <h1>Contact</h1>
                 <hr/>
                 <form ref={form} onSubmit={sendEmail}>
                     <input type="text" name="from_name" required placeholder="Name:"/>
