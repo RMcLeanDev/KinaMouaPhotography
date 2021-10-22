@@ -3,14 +3,19 @@
 
 
 .contactMe{
-    width: 90vw;
+    width: calc(50vw + 20px);
     margin: auto;
+    hr{
+        margin: 30px 0;
+    }
     form{
         display: flex;
         flex-direction: column;
         padding: 50px 10px;
         background-color: #deb8b8;
         border-radius: 10px;
+        width: 50vw;
+        margin: auto;
         input{
             font-family: 'Cormorant Garamond';
             margin-bottom: 25px;
@@ -36,6 +41,12 @@
             height: 50px;
             margin: auto;
             background-color: #e0e0db;
+        }
+    }
+    @include mQ(1150px){
+        width: calc(80vw + 20px);
+        form{
+            width: 80vw;
         }
     }
 }
