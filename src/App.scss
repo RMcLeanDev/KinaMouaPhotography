@@ -8,7 +8,7 @@ hr{
 
 .header{
   z-index: 1;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #deb8b8;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,6 +16,7 @@ hr{
   top: 0;
   background-color: #e0e0db;
   width: 100vw;
+  padding-top: 15px;
   a{
     margin: 0px 10px;
     padding: 10px 0;
@@ -28,12 +29,12 @@ hr{
     &:active{
       color: grey;
     }
-    &:hover{
-      text-decoration: underline;
-      text-shadow: 1px 3px 5px darkgrey;
-    }
     &:visited{
       color: black;
+    }
+    &:hover{
+      text-decoration: underline;
+      color: #deb8b8;
     }
   }
   .desktopHeader{
