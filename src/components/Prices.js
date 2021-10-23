@@ -7,14 +7,15 @@ function Prices(){
             <div>
                 <h1>Prices</h1>
                 <p>*Photoshoots will require the deposit fee to hold your spot in my schedule.</p>
+                <p>*Deposit fee will be credited towards final price.</p>
             </div>
             <hr/>
             <div className="packagesContainer">
-                <h1>Portraits/Senior Photos</h1>
+                <h1>Portraits & Senior Photos</h1>
                 <div className="package">
                     <h2>MINI PACKAGE</h2>
                     <h3>$150 with 50% deposit</h3>
-                    <h3>30 minuet session, 1 outfit, 1 location</h3>
+                    <h3>30 minute session, 1 outfit, 1 location</h3>
                     <h3>10+ fully edited photos</h3>
                 </div>
                 <div className="package">
@@ -44,7 +45,7 @@ function Prices(){
                 <div className="package">
                     <h2>MINI PACKAGE</h2>
                     <h3>$150 with 50% deposit</h3>
-                    <h3>30 minuet session, 1 outfit, 1 location</h3>
+                    <h3>30 minute session, 1 outfit, 1 location</h3>
                     <h3>10+ fully edited photos</h3>
                 </div>
                 <div className="package">
