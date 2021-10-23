@@ -10,7 +10,13 @@ import downArrow from '../assets/downArrow.png';
 function Testimonials(){
 
     
-    let images = [testim1, testim2, testim3, testim4]
+    let images = [testim1, testim2, testim3, testim4];
+    let comment = ["“Kina is an incredibly gifted photographer; I absolutely adored the way all of my photos turned out. Her editing style is amazing, and she made me feel comfortable in every shoot.”",
+        "“Working with Kina was such a confidence boost. It was my first photo shoot since I had my senior pictures done in 2015. I was so stunned by the end results. I haven’t felt this confident or beautiful in awhile. The actual shoot was comfortable, fun, full of laughter, and memorable.”",
+        "“We love them all! Thank you so much for dealing with our weirdness!”",
+        "“Kina is an amazin photographer, she got everything I wanted and took her time when taking the photos and turned out beautiful! I had an amazing experience. You won't regret working with Kina she does beautiful work and good with detail”"
+    ]
+    let name = ["-Noelle", "-Selena M.", "-Lexy & Garrett", "-Julia"]
     
     const [count, setCount] = useState(0);
     
@@ -82,10 +88,15 @@ function Testimonials(){
                 </div>
             </div>
             <div className="mobileTestim">
-                <h1>mobile testim</h1>
-                <button onClick={prevPhoto}>Prev</button>
-                <button onClick={nextPhoto}>Next</button>
-                <img src={images[count]}/>
+                <button onClick={prevPhoto} className="prevButton">Prev</button>
+                <div className="testimonialContainer">
+                    <img src={images[count]}/>
+                    <div className="satatement">
+                        <h2>{comment[count]}</h2>
+                        <h2>{name[count]}</h2>
+                    </div>
+                </div>
+                <button onClick={nextPhoto} className="nextButton">Next</button>
             </div>
             <hr/>
             <img src={downArrow} className="downArrow"/>
