@@ -6,8 +6,14 @@ import testim2 from '../assets/testim2.jpg';
 import testim3 from '../assets/testim3.jpeg';
 import testim4 from '../assets/testim4.jpeg';
 import downArrow from '../assets/downArrow.png';
+import {useSwipeable} from "react-swipeable";
 
 function Testimonials(){
+
+    const handlers = useSwipeable({
+        onSwipedLeft: () => nextPhoto(),
+        onSwipedRight: () => prevPhoto()
+    })
 
     
     let images = [testim1, testim2, testim3, testim4];
@@ -87,16 +93,16 @@ function Testimonials(){
                     </div>
                 </div>
             </div>
-            <div className="mobileTestim">
-                <button onClick={prevPhoto} className="prevButton">Prev</button>
+            <div className="mobileTestim" {...handlers}>
                 <div className="testimonialContainer">
                     <img src={images[count]}/>
                     <div className="satatement">
+                        <button onClick={prevPhoto} className="prevButton">&#x2039;</button>
                         <h2>{comment[count]}</h2>
                         <h2>{name[count]}</h2>
+                        <button onClick={nextPhoto} className="nextButton">&#x203A;</button>
                     </div>
                 </div>
-                <button onClick={nextPhoto} className="nextButton">Next</button>
             </div>
             <hr/>
             <img src={downArrow} className="downArrow"/>

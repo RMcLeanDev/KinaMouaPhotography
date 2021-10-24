@@ -1,6 +1,9 @@
 @import './Mixin.scss';
 
 .testimonials{
+    .mobileTestim{
+        display: none;
+    }
     h1{
         font-size: 50px;
         font-weight: 400;
@@ -90,7 +93,6 @@
             display: grid;
             width: 100vw;
             position: relative;
-            grid-template-columns: 3vw 90vw 3vw;
             justify-content: center;
             .testimonialContainer{
                 position: relative;
@@ -105,7 +107,7 @@
                     flex-direction: column;
                     justify-content: center;
                     height: 100%;
-                    width: 100%;
+                    width: 90vw;
                     background-color: rgba(0,0,0,0.3);
                     color: white;
                     h2{
@@ -116,12 +118,28 @@
                         line-height: 150%;
                         opacity: 1;
                     }
+                    .prevButton{
+                        position: absolute;
+                        left: 0;
+                        font-size: 60px;
+                        color: pink;
+                        background-color: rgba(0,0,0,0);
+                        border: 0px;
+                    }
+                    .nextButton{
+                        position: absolute;
+                        right: 0;
+                        font-size: 60px;
+                        color: pink;
+                        background-color: none;
+                        background-color: rgba(0,0,0,0);
+                        border: 0px;
+                    }
                 }
             }
-            button{
-                z-index: 5;
-                width: 1vw;
-            }
+        }
+        form{
+            width: 90vw;
         }
     }
 }
