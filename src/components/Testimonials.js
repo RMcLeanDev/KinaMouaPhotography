@@ -32,22 +32,22 @@ function Testimonials(){
     let name = ["-Noelle", "-Selena M.", "-Lexy & Garrett", "-Julia"]
     
     const [count, setCount] = useState(0);
+    const [alert, setAlert] = useState(null);
     
     const form = useRef();
     
     const sendEmail = (e) => {
         e.preventDefault();
-        
-        console.log("kalsdhkfj")
-        
-        emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, 'template_gpiy5r9', form.current, process.env.REACT_APP_EMAILJS)
+                
+        emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, 'template_iu3k0y6', form.current, process.env.REACT_APP_EMAILJS)
         .then((result) => {
-            console.log(result.text);
+            setAlert(<h1>Thank you for submitting your testimonial!</h1>)
         }, (error) => {
-            console.log(error.text);
+            setAlert(<p>{error.text}</p>)
         });
         
     };
+
     
     function prevPhoto(){
         if(count === 0){
@@ -115,6 +115,7 @@ function Testimonials(){
             <img src={downArrow} className="downArrow" alt=""/>
             <h1>Submit Your Testimonial Here!</h1>
             <form ref={form} onSubmit={sendEmail}>
+                {alert}
                 <input type="text" name="from_name" required placeholder="Name:"/>
                 <input type="email" name="reply_to" required placeholder="Email:"/>
                 <textarea name="message" placeholder="Message:"/>
