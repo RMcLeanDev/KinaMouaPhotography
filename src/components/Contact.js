@@ -10,8 +10,6 @@ function Contact(){
 
     const sendEmail = (e) => {
         e.preventDefault();
-
-        console.log("kalsdhkfj")
     
         emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, 'template_g2z8q1p', form.current, process.env.REACT_APP_EMAILJS)
           .then((result) => {
