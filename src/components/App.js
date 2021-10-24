@@ -12,6 +12,7 @@ import AOS from 'aos';
 import Prices from './Prices';
 import Testimonials from './Testimonials';
 import Footer from './Footer.js';
+import FAQ from './FAQ';
 
 function App(props) {
 
@@ -29,6 +30,7 @@ function App(props) {
         <Route exact path ='/Contact' component={Contact}/>
         <Route exact path ='/Prices' component={Prices}/>
         <Route exact path ='/Testimonials' component={Testimonials}/>
+        <Route exact path ='/FAQ' component={FAQ}/>
         <Route component={Error404}/>
       </Switch>
       <Footer/>
