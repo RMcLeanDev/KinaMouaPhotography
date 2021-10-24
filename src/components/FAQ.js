@@ -1,7 +1,15 @@
-import react from 'react';
+import react, {useEffect} from 'react';
 import '../scss/FAQ.scss';
 
 function FAQ(){
+
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        })
+    },[])
+
     return(
         <div className="faq">
             <h1>FAQ</h1>
@@ -31,7 +39,7 @@ function FAQ(){
             </div>
             <div>
                 <h2>Q: Do you store our images?</h2>
-                <h3>A: I clean out my files after 2 months. I suggest you back-up your photos when you recieve them; in case they every get lost.</h3>
+                <h3>A: I clean out my files after 2 months. I suggest you back-up your photos when you recieve them; in case they ever get lost.</h3>
             </div>
             <div>
                 <h2>Q: Do you give RAW files?</h2>

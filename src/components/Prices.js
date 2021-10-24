@@ -1,7 +1,15 @@
-import react from 'react';
+import react, {useEffect} from 'react';
 import '../scss/Prices.scss';
 
 function Prices(){
+
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        })
+    },[])
+
     return(
         <div className="prices">
             <div>

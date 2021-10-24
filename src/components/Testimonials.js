@@ -1,4 +1,4 @@
-import react, {useRef, useState} from 'react';
+import react, {useRef, useState, useEffect} from 'react';
 import '../scss/Testimonials.scss';
 import emailjs from 'emailjs-com';
 import testim1 from '../assets/testim1.jpeg';
@@ -9,6 +9,13 @@ import downArrow from '../assets/downArrow.png';
 import {useSwipeable} from "react-swipeable";
 
 function Testimonials(){
+
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        })
+    },[])
 
     const handlers = useSwipeable({
         onSwipedLeft: () => nextPhoto(),

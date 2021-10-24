@@ -1,10 +1,17 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import kinaPhoto from '../assets/kina.JPG';
 import '../scss/Home.scss';
 import downArrow from '../assets/downArrow.png';
 import RecentWork from './RecentWork';
 
 function Home(props){
+
+  useEffect(() => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    })
+},[])
 
   return(
     <div>
