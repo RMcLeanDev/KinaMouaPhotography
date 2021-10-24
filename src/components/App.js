@@ -11,6 +11,7 @@ import Contact from './Contact';
 import AOS from 'aos';
 import Prices from './Prices';
 import Testimonials from './Testimonials';
+import Footer from './Footer.js';
 
 function App(props) {
 
@@ -30,6 +31,7 @@ function App(props) {
         <Route exact path ='/Testimonials' component={Testimonials}/>
         <Route component={Error404}/>
       </Switch>
+      <Footer/>
     </div>
   );
 }

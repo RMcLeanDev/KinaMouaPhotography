@@ -1,0 +1,25 @@
+.footer{
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    text-align: start;
+    justify-content: space-around;
+    .leftFooter{
+        display: flex;
+        flex-direction: column;
+    }
+    .rightFooter{
+        display: flex;
+        flex-direction: column;
+    }
+    h1{
+        margin: 0;
+        padding: 0;
+        font-weight: 400;
+    }
+    img{
+        height: 40px;
+        color: white;
+    }
+}
