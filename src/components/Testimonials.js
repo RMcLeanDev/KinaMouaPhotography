@@ -65,28 +65,28 @@ function Testimonials(){
             <hr/>
             <div className="desktopTestim">
                 <div className="testimonialContainer">
-                    <img src={testim1}/>
+                    <img src={testim1} alt=""/>
                     <div className="satatement">
                         <h2>“Kina is an incredibly gifted photographer; I absolutely adored the way all of my photos turned out. Her editing style is amazing, and she made me feel comfortable in every shoot.”</h2>
                         <h2>-Noelle</h2>
                     </div>
                 </div>
                 <div className="testimonialContainer">
-                    <img src={testim2}/>
+                    <img src={testim2} alt=""/>
                     <div className="satatement">
                         <h2>“Working with Kina was such a confidence boost. It was my first photo shoot since I had my senior pictures done in 2015. I was so stunned by the end results. I haven’t felt this confident or beautiful in awhile. The actual shoot was comfortable, fun, full of laughter, and memorable.”</h2>
                         <h2>-Selena M.</h2>
                     </div>
                 </div>
                 <div className="testimonialContainer">
-                    <img src={testim3}/>
+                    <img src={testim3} alt=""/>
                     <div className="satatement">
                         <h2>“We love them all! Thank you so much for dealing with our weirdness!”</h2>
                         <h2>-Lexy & Garrett</h2>
                     </div>
                 </div>
                 <div className="testimonialContainer">
-                    <img src={testim4}/>
+                    <img src={testim4} alt=""/>
                     <div className="satatement">
                         <h2>“Kina is an amazin photographer, she got everything I wanted and took her time when taking the photos and turned out beautiful! I had an amazing experience. You won't regret working with Kina she does beautiful work and good with detail”</h2>
                         <h2>-Julia</h2>
@@ -95,7 +95,7 @@ function Testimonials(){
             </div>
             <div className="mobileTestim" {...handlers}>
                 <div className="testimonialContainer">
-                    <img src={images[count]}/>
+                    <img src={images[count]} alt=""/>
                     <div className="satatement">
                         <button onClick={prevPhoto} className="prevButton">&#x2039;</button>
                         <h2>{comment[count]}</h2>
@@ -105,7 +105,7 @@ function Testimonials(){
                 </div>
             </div>
             <hr/>
-            <img src={downArrow} className="downArrow"/>
+            <img src={downArrow} className="downArrow" alt=""/>
             <h1>Submit Your Testimonial Here!</h1>
             <form ref={form} onSubmit={sendEmail}>
                 <input type="text" name="from_name" required placeholder="Name:"/>

@@ -9,10 +9,10 @@ import 'aos/dist/aos.css';
 function RecentWork(){
     return(
         <div className="recentWork">
-            <img src={image1} data-aos="fade-up"/> 
-            <img src={image4} data-aos="fade-up"/>     
-            <img src={image2} data-aos="fade-up"/>
-            <img src={image3} data-aos="fade-up"/> 
+            <img src={image1} data-aos="fade-up" alt=""/> 
+            <img src={image4} data-aos="fade-up" alt=""/>     
+            <img src={image2} data-aos="fade-up" alt=""/>
+            <img src={image3} data-aos="fade-up" alt=""/> 
         </div>
     )
 }
