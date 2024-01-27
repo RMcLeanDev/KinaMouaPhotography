@@ -30,7 +30,7 @@ function Header(){
       </div>
       <div className="desktopHeader">
         <Link to='/'>Home</Link>
-        <Link to='/About'>About</Link>
+        <Link to='/RecentWork'>Recent Work</Link>
         <Link to='/Contact'>Book Me</Link>
         <Link to='/Prices'>Prices</Link>
         <Link to='/Testimonials'>Testimonials</Link>
@@ -51,7 +51,7 @@ function Header(){
           <div className={headerDisplay.menu}>
             <div className="insideMobileHeader">
               <Link exact to='/' onClick={() => setShowHide(false)}><h3>Home</h3></Link>
-              <Link exact to='/About' onClick={() => setShowHide(false)}><h3>About</h3></Link>
+              <Link exact to='/RecentWork' onClick={() => setShowHide(false)}><h3>Recent Work</h3></Link>
               <Link to='/Contact' onClick={() => setShowHide(false)}><h3>Book Me</h3></Link>
               <Link to='/Prices' onClick={() => setShowHide(false)}><h3>Prices</h3></Link>
               <Link to='/Testimonials' onClick={() => setShowHide(false)}><h3>Testimonials</h3></Link>

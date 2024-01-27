@@ -1,8 +1,8 @@
 import React, {useEffect} from 'react';
 import kinaPhoto from '../assets/kina.JPG';
 import '../scss/Home.scss';
+import About from './About';
 import downArrow from '../assets/downArrow.png';
-import RecentWork from './RecentWork';
 
 function Home(props){
 
@@ -27,8 +27,8 @@ function Home(props){
       </div>
       <div> 
         <img src={downArrow} className="downArrow" alt=""/>
-        <h1><em>Recent Work</em></h1>
-        <RecentWork/>
+        <h1><em>About My Art</em></h1>
+        <About/>
       </div>
     </div>
   )

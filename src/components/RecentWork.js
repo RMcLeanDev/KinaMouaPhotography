@@ -8,6 +8,7 @@ import image5 from '../assets/image0.6dbc1fe9.jpeg'
 import image6 from '../assets/image2.42dee657.jpeg'
 import image7 from '../assets/image4.jpeg'
 import image8 from '../assets/image06.jpeg'
+import downArrow from '../assets/downArrow.png';
 import '../scss/RecentWork.scss';
 import 'aos/dist/aos.css';
 
@@ -18,6 +19,8 @@ function RecentWork(){
 
     return(
         <div>
+            <img src={downArrow} className="downArrow" alt=""/>
+            <h1><em>Recent Work</em></h1>
             {
             size ? 
             <div className="recentWork">

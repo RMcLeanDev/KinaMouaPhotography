@@ -4,7 +4,7 @@ import Error404 from './Error404';
 import Home from './Home';
 import {Routes, Route} from 'react-router-dom';
 import '../App.scss';
-import About from './About';
+import RecentWork from './RecentWork';
 import Header from './Header';
 import Contact from './Contact';
 import AOS from 'aos';
@@ -25,7 +25,7 @@ function App(props) {
       <Header/>
       <Routes>
         <Route exact path ='/' element={<Home/>}/>
-        <Route exact path ='/About' element={<About />}/>
+        <Route exact path ='/RecentWork' element={<RecentWork />}/>
         <Route exact path ='/Contact' element={<Contact />}/>
         <Route exact path ='/Prices' element={<Prices />}/>
         <Route exact path ='/Testimonials' element={<Testimonials />}/>
