@@ -6,6 +6,7 @@ import testim3 from '../assets/testim3.jpeg';
 import testim4 from '../assets/testim4.jpeg';
 import downArrow from '../assets/downArrow.png';
 import {useSwipeable} from "react-swipeable";
+import emailjs from '@emailjs/browser'
 
 function Testimonials(){
 
@@ -38,12 +39,12 @@ function Testimonials(){
     const sendEmail = (e) => {
         e.preventDefault();
                 
-        /*emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, 'template_iu3k0y6', form.current, process.env.REACT_APP_EMAILJS)
+        emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, 'template_6n1xc8i', form.current, process.env.REACT_APP_EMAILJS)
         .then((result) => {
             setAlert(<h1>Thank you for submitting your testimonial!</h1>)
         }, (error) => {
             setAlert(<p>{error.text}</p>)
-        });*/
+        });
         
     };
 
