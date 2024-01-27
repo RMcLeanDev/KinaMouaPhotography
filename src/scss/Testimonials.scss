@@ -1,0 +1,150 @@
+@import './Mixin.scss';
+
+.testimonials{
+    .mobileTestim{
+        display: none;
+    }
+    h1{
+        font-size: 50px;
+        font-weight: 400;
+    }
+    .desktopTestim{
+        display: grid;
+        grid-gap: 25px;
+        justify-content: center;
+        grid-template-columns: 23vw 23vw 23vw 23vw;
+        .testimonialContainer{
+            position: relative;
+            margin: 50px 0;
+            img{
+                width: 23vw;
+            }
+            .satatement{
+                position: absolute;
+                top: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 100%;
+                background-color: rgba(0,0,0,0.5);
+                color: white;
+                h2{
+                    margin: 10px;
+                    padding: 0;
+                    font-size: 1.5vw;
+                    font-weight: 400;
+                    line-height: 150%;
+                    opacity: 1;
+                }
+            }
+            &:hover{
+                .satatement{
+                    background-color: rgba(0,0,0,0);
+                    h2{
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        padding: 50px 10px;
+        background-color: #deb8b8;
+        border-radius: 10px;
+        width: 50vw;
+        margin: auto;
+        input{
+            font-family: 'Cormorant Garamond';
+            margin-bottom: 25px;
+            height: 30px;
+            font-size: 20px;
+            &:focus{
+                box-shadow: 0px 0px 10px black;
+            }
+        }
+        textarea{
+            font-family: 'Cormorant Garamond';
+            font-weight: 500;
+            margin-bottom: 25px;
+            font-size: 30px;
+            height: 100px;
+            overflow: auto;
+        }
+        button{
+            font-family: 'Cormorant Garamond';
+            font-weight: 800;
+            font-size: 25px;
+            width: 150px;
+            height: 50px;
+            margin: auto;
+            background-color: #e0e0db;
+        }
+        @include mQ(1500px){
+            width: 90vw;
+        }
+    }
+    @include mQ(1000px){
+        .desktopTestim{
+            display: none;
+        }
+        .mobileTestim{
+            display: grid;
+            width: 100vw;
+            position: relative;
+            justify-content: center;
+            .testimonialContainer{
+                position: relative;
+                margin: 50px 0;
+                img{
+                    width: 90vw;
+                }
+                .satatement{
+                    position: absolute;
+                    top: 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    height: 100%;
+                    width: 90vw;
+                    background-color: rgba(0,0,0,0.3);
+                    color: white;
+                    h2{
+                        margin: 15px;
+                        padding: 0;
+                        font-size: 6vw;
+                        font-weight: 400;
+                        line-height: 150%;
+                        opacity: 1;
+                    }
+                    .buttons{
+                        position: absolute;
+                        bottom: 0;
+                        display: flex;
+                        justify-content: space-between;
+                        width: 90vw;
+                    }
+                    .prevButton{
+                        font-size: 60px;
+                        color: pink;
+                        background-color: rgba(0,0,0,0);
+                        border: 0px;
+                        opacity: 0.8;
+                    }
+                    .nextButton{
+                        font-size: 60px;
+                        color: pink;
+                        background-color: none;
+                        background-color: rgba(0,0,0,0);
+                        border: 0px;
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+        form{
+            width: 90vw;
+        }
+    }
+}

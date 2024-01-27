@@ -1,0 +1,60 @@
+@import './Mixin.scss';
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500&display=swap');
+
+
+.contactMe{
+    width: calc(50vw + 20px);
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    hr{
+        margin: 30px 0;
+    }
+    h1{
+        font-weight: 400;
+        font-size: 50px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        padding: 50px 10px;
+        background-color: #deb8b8;
+        border-radius: 10px;
+        width: 50vw;
+        margin: auto;
+        input{
+            font-family: 'Cormorant Garamond';
+            margin-bottom: 25px;
+            height: 30px;
+            font-size: 20px;
+            &:focus{
+                box-shadow: 0px 0px 10px black;
+            }
+        }
+        textarea{
+            font-family: 'Cormorant Garamond';
+            font-weight: 500;
+            margin-bottom: 25px;
+            font-size: 30px;
+            height: 300px;
+            overflow: auto;
+        }
+        button{
+            font-family: 'Cormorant Garamond';
+            font-weight: 800;
+            font-size: 25px;
+            width: 150px;
+            height: 50px;
+            margin: auto;
+            background-color: #e0e0db;
+        }
+    }
+    @include mQ(1150px){
+        width: calc(80vw + 20px);
+        form{
+            width: 80vw;
+        }
+    }
+}

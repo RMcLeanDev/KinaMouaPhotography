@@ -1,0 +1,30 @@
+@import './Mixin.scss';
+
+.aboutMe{
+    display: grid;
+    width: 60vw;
+    height: 90vh;
+    align-items: center;
+    margin: auto;
+    h1{
+        font-weight: 400;
+    }
+    h2{
+        font-weight: 400;
+        font-size: 50px;
+    }
+    @include mQ(1150px){
+        width: 90vw;
+        em{
+            font-weight: 300;
+        }
+        h2{
+            font-size: 35px;
+        }
+    }
+    @include mQ(475px){
+        h2{
+            font-size: 25px;
+        }
+    }
+}
