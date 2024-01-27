@@ -9,13 +9,17 @@ import image6 from '../assets/image2.42dee657.jpeg'
 import image7 from '../assets/image4.jpeg'
 import image8 from '../assets/image06.jpeg'
 import downArrow from '../assets/downArrow.png';
+import image9 from '../assets/image12.jpeg'
+import image10 from '../assets/image22.jpeg'
+import image11 from '../assets/image02.jpeg'
+import image12 from '../assets/image32.jpeg'
 import ZoomImage from './ZoomImage';
 import '../scss/RecentWork.scss';
 import 'aos/dist/aos.css';
 
 function RecentWork(){
 
-    const arry = [image1, image2, image3, image4, image5, image6, image7, image8];
+    const arry = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12];
     const [zoom, setZoom] = useState({show: false, imageInfo: null});
 
     return(
