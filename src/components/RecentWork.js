@@ -21,7 +21,6 @@ function RecentWork(){
     return(
         <div>
             {zoom.show ? <ZoomImage close={() => setZoom({show: false, imageInfo: null})} image={zoom.imageInfo}/> : null}
-            <img src={downArrow} className="downArrow" alt=""/>
             <h1><em>Recent Work</em></h1>
             <div className="recentWork">
                 {Object.keys(arry).map(images => {
