@@ -1,4 +1,4 @@
-import react from 'react';
+import react, {useState} from 'react';
 import {useImageSize} from 'react-image-size';
 import image1 from '../assets/image0.jpeg';
 import image2 from '../assets/image1.jpeg';
@@ -9,32 +9,26 @@ import image6 from '../assets/image2.42dee657.jpeg'
 import image7 from '../assets/image4.jpeg'
 import image8 from '../assets/image06.jpeg'
 import downArrow from '../assets/downArrow.png';
+import ZoomImage from './ZoomImage';
 import '../scss/RecentWork.scss';
 import 'aos/dist/aos.css';
 
 function RecentWork(){
 
-    let size = useImageSize(image1)[0];
-    console.log(size)
+    const arry = [image1, image2, image3, image4, image5, image6, image7, image8];
+    const [zoom, setZoom] = useState({show: false, imageInfo: null});
 
     return(
         <div>
+            {zoom.show ? <ZoomImage close={() => setZoom({show: false, imageInfo: null})} image={zoom.imageInfo}/> : null}
             <img src={downArrow} className="downArrow" alt=""/>
             <h1><em>Recent Work</em></h1>
-            {
-            size ? 
             <div className="recentWork">
-                <img style={{maxHeight: "80vh"}} src={image1} data-aos="fade-up" alt=""/> 
-                <img style={{maxHeight: "80vh"}} src={image4} data-aos="fade-up" alt=""/>     
-                <img style={{maxHeight: "80vh"}} src={image2} data-aos="fade-up" alt=""/>
-                <img style={{maxHeight: "80vh"}} src={image3} data-aos="fade-up" alt=""/> 
-                <img style={{maxHeight: "80vh"}} src={image5} data-aos="fade-up" alt=""/> 
-                <img style={{maxHeight: "80vh"}} src={image6} data-aos="fade-up" alt=""/> 
-                <img style={{maxHeight: "80vh"}} src={image7} data-aos="fade-up" alt=""/> 
-                <img style={{maxHeight: "80vh"}} src={image8} data-aos="fade-up" alt=""/> 
+                {Object.keys(arry).map(images => {
+                    let image = arry[images];
+                    return <img onClick={() => setZoom({show:true, imageInfo: image})} style={{maxHeight: "80vh", cursor: "pointer"}} src={image} data-aos="fade-up" alt=""/> 
+                })}
             </div>
-            : "loading"
-        }
         </div>  
     )
 }
