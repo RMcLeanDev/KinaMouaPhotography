@@ -1,5 +1,4 @@
-import react, {useState} from 'react';
-import {useImageSize} from 'react-image-size';
+import {useState} from 'react';
 import image1 from '../assets/image0.jpeg';
 import image2 from '../assets/image1.jpeg';
 import image3 from '../assets/image2.jpeg';
@@ -8,7 +7,6 @@ import image5 from '../assets/image0.6dbc1fe9.jpeg'
 import image6 from '../assets/image2.42dee657.jpeg'
 import image7 from '../assets/image4.jpeg'
 import image8 from '../assets/image06.jpeg'
-import downArrow from '../assets/downArrow.png';
 import image9 from '../assets/image12.jpeg'
 import image10 from '../assets/image22.jpeg'
 import image11 from '../assets/image02.jpeg'

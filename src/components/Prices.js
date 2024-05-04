@@ -1,4 +1,3 @@
-import react, {useEffect} from 'react';
 import '../scss/Prices.scss';
 
 function Prices(){
