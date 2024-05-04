@@ -9,52 +9,42 @@
     justify-content: center;
     align-items: center;
     margin: auto;
-    hr{
-        margin: 30px 0;
-    }
-    h1{
-        font-weight: 400;
-        font-size: 50px;
-    }
     form{
-        display: flex;
-        flex-direction: column;
-        padding: 50px 10px;
-        background-color: #deb8b8;
-        border-radius: 10px;
-        width: 50vw;
-        margin: auto;
-        input{
-            font-family: 'Cormorant Garamond';
-            margin-bottom: 25px;
-            height: 30px;
-            font-size: 20px;
-            &:focus{
-                box-shadow: 0px 0px 10px black;
-            }
-        }
-        textarea{
-            font-family: 'Cormorant Garamond';
-            font-weight: 500;
-            margin-bottom: 25px;
-            font-size: 30px;
-            height: 300px;
-            overflow: auto;
-        }
-        button{
-            font-family: 'Cormorant Garamond';
-            font-weight: 800;
+        border-radius: 5px;
+        background-color: white;
+        color: rgb(207, 114, 129);
+        padding: 10px;
+        .inputItems{
             font-size: 25px;
-            width: 150px;
-            height: 50px;
-            margin: auto;
-            background-color: #e0e0db;
-        }
-    }
-    @include mQ(1150px){
-        width: calc(80vw + 20px);
-        form{
-            width: 80vw;
+            display: grid;
+            text-align: left;
+            width: 60vw;
+            h3{
+                margin: 0;
+                padding: 0;
+                font-weight: 100;
+            }
+            input{
+                font-family: 'Cormorant Garamond';
+                border: none;
+                border-bottom: 1px solid black;
+                font-size: 30px;
+                font-weight: bold;
+                width: 100%;
+                &::placeholder{
+                    color: lightgray
+                }
+            }
+            select{
+                font-family: 'Cormorant Garamond';
+                font-weight: bold;
+                border: none;
+                border-bottom: 1px solid black;
+                font-size: 23px;
+            }
+            option{
+                font-weight: bold;
+            }
         }
     }
 }

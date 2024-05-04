@@ -3,12 +3,12 @@ import '../scss/Prices.scss';
 
 function Prices(){
 
-    useEffect(() => {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        })
-    },[])
+    // useEffect(() => {
+    //     window.scrollTo({
+    //         top: 0,
+    //         behavior: "smooth"
+    //     })
+    // },[])
 
     return(
         <div className="prices">
@@ -75,6 +75,13 @@ function Prices(){
                     <h2>STANDARD PACKAGE</h2>
                     <h3>$1000 with 20% deposit</h3>
                     <h3>Covers 8 hours including getting ready, ceremony, reception, and first look photos</h3>
+                </div>
+            </div>
+            <div className="packagesContainer">
+                <div className="package">
+                    <h2>CUSTOM PACKAGE</h2>
+                    <h3>Don't see a package that fits your needs?</h3>
+                    <h3>I can create a custom package specifically designed for you!</h3>
                 </div>
             </div>
         </div>
