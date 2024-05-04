@@ -12,6 +12,7 @@
         border: 15px solid #deb8b8;
         box-shadow: 0 0 10px #deb8b8;
         border-radius: 10px;
+        justify-self: center;
     }
     @include mQ(1150px){
         img{
