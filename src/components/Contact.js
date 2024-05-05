@@ -22,8 +22,8 @@ function Contact(){
     
     let packages;
     let locationOfShoot = <div className="inputItems">
-        <h3 style={{fontSize: "23px"}}>LOCATION OF SHOOT:</h3>
-        <input name="location" style={{fontSize: "23px"}} type="text" placeholder="City, State"></input>
+        <h3>LOCATION OF SHOOT:</h3>
+        <input name="location" type="text" placeholder="City, State"></input>
     </div>
 
     if(packageOption !== ""){
@@ -31,7 +31,7 @@ function Contact(){
             packages = 
             <div>
                 <div className="inputItems">
-                    <h3 style={{fontSize: "23px"}}>PACKAGES:</h3>
+                    <h3>PACKAGES:</h3>
                     <select name="package">
                         <option value="">Select an option</option>
                         <option value="Mini Package">Mini Package</option>
@@ -40,7 +40,7 @@ function Contact(){
                     </select>
                 </div>
                 <div className="inputItems">
-                    <h3 style={{fontSize: "23px"}}>PHOTO CATEGORY:</h3>
+                    <h3>PHOTO CATEGORY:</h3>
                     <select name="photoCategory">
                         <option value="">Select an option</option>
                         <option value="Basic Portraits">Basic Portraits</option>
@@ -56,7 +56,7 @@ function Contact(){
             packages = 
             <div>
                 <div className="inputItems">
-                    <h3 style={{fontSize: "23px"}}>PACKAGES:</h3>
+                    <h3>PACKAGES:</h3>
                     <select name="package">
                         <option value="">Select an option</option>
                         <option value="Mini Package">Mini Package</option>
@@ -65,7 +65,7 @@ function Contact(){
                 </div>
                 {locationOfShoot}
                 <div className="inputItems">
-                    <h3 style={{fontSize: "23px"}}>PHOTO CATEGORY:</h3>
+                    <h3>PHOTO CATEGORY:</h3>
                     <select name="photoCategory">
                         <option value="">Select an option</option>
                         <option value="Basic Couples">Basic Couples</option>
@@ -79,7 +79,7 @@ function Contact(){
             packages = 
             <div>
                 <div className="inputItems">
-                    <h3 style={{fontSize: "23px"}}>PACKAGES:</h3>
+                    <h3>PACKAGES:</h3>
                     <select name="package">
                         <option value="">Select an option</option>
                         <option value="Elopement Package">Elopement Package</option>
@@ -88,24 +88,24 @@ function Contact(){
                 </div>
                 {locationOfShoot}
                 <div className="inputItems">
-                    <h3 style={{fontSize: "23px"}}>VENUE (If Applicable):</h3>
-                    <input name="weddingVenue" style={{fontSize: "23px"}}/>
+                    <h3>VENUE (If Applicable):</h3>
+                    <input name="weddingVenue"/>
                 </div>
                 <div className="inputItems">
-                    <h3 style={{fontSize: "23px"}}>DATE OF EVENT (If Applicable):</h3>
-                    <input type="date" name="weddingDate" style={{fontSize: "23px"}}/>
+                    <h3>DATE OF EVENT (If Applicable):</h3>
+                    <input type="date" name="weddingDate"/>
                 </div>
                 <div className="inputItems">
-                    <h3 style={{fontSize: "23px"}}>ARRIVAL TIME:</h3>
-                    <input type="time" name="weddingTime" style={{fontSize: "23px"}}/>
+                    <h3>ARRIVAL TIME:</h3>
+                    <input type="time" name="weddingTime"/>
                 </div>
                 <div className="inputItems">
-                    <h3 style={{fontSize: "23px"}}>ESTIMATED NUMBER OF GUESTS:</h3>
-                    <input type="number" name="weddingGuests" style={{fontSize: "23px"}}/>
+                    <h3>ESTIMATED NUMBER OF GUESTS:</h3>
+                    <input type="number" name="weddingGuests"/>
                 </div>
                 <div className="inputItems">
-                    <h3 style={{fontSize: "23px"}}>NUMBER OF BRIDAL PARTY:</h3>
-                    <input type="number" name="weddingBridal" style={{fontSize: "23px"}}/>
+                    <h3>NUMBER OF BRIDAL PARTY:</h3>
+                    <input type="number" name="weddingBridal"/>
                 </div>
             </div>
         } else if(packageOption === "Families & Friends"){
@@ -113,8 +113,8 @@ function Contact(){
             <div>
                 {locationOfShoot}
                 <div className="inputItems">
-                    <h3 style={{fontSize: "23px"}}>NUMBER OF PARTICIPANTS:</h3>
-                    <input name="familyParticipants" placeholder='(1, 2, 3, 4, 5, etc)' style={{fontSize: "23px"}}/>
+                    <h3>NUMBER OF PARTICIPANTS:</h3>
+                    <input name="familyParticipants" placeholder='(1, 2, 3, 4, 5, etc)'/>
                 </div>
             </div>
         }
@@ -127,10 +127,10 @@ function Contact(){
                 <hr/>
                 <form ref={form} onSubmit={sendEmail}>
                     {alert}
-                    <h1 style={{color: "black", padding: "0", margin: "0"}}>CLIENT INFO:</h1>
+                    <h1 style={{color: "white", padding: "0", margin: "0"}}>CLIENT INFO:</h1>
                     <div className="inputItems">
                         <h3>NAME:</h3>
-                        <input name="from_name" type="text" placeholder="John Doe" required/>
+                        <input name="from_name" type="text" placeholder="First, Last" required/>
                     </div>
                     <div className="inputItems">
                         <h3>PHONE NUMBER:</h3>
@@ -138,18 +138,18 @@ function Contact(){
                     </div>
                     <div className="inputItems">
                         <h3>EMAIL:</h3>
-                        <input name="reply_to" type="text" placeholder="JohnDoe@none.com" required/>
+                        <input name="reply_to" type="text" placeholder="Email@none.com" required/>
                     </div>
                     <div className="inputItems">
-                        <h3 style={{fontSize: "23px"}}>PREFERRED CONTACT METHOD:</h3>
+                        <h3>PREFERRED CONTACT METHOD:</h3>
                         <select name="method">
                             <option value="Phone">Phone</option>
                             <option value="Email">Email</option>
                         </select>
                     </div>
-                    <h1 style={{color: "black"}}>TYPE OF SHOOT:</h1>
+                    <h1 style={{color: "white"}}>TYPE OF SHOOT:</h1>
                     <div className="inputItems">
-                        <h3 style={{fontSize: "23px"}}>SHOOT OPTIONS:</h3>
+                        <h3>SHOOT OPTIONS:</h3>
                         <select name="shootOption" value={packageOption} onChange={(e) => setPackageOption(e.target.value)}>;
                             <option value="">Select an option</option>
                             <option value="Portraits & Senior Photos">Portraits & Senior Photos</option>
@@ -162,7 +162,7 @@ function Contact(){
                     {packages}
                     <div className="inputItems" style={{display: "grid", margin: "auto", textAlign:"center"}}>
                         <h3>OTHER COMMENTS OR QUESTIONS:</h3>
-                        <textarea name="message" style={{minHeight:"100px"}} type="text"></textarea>
+                        <textarea name="message"type="text"></textarea>
                     </div>
                     <button>Submit</button>
                 </form>

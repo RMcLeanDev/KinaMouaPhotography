@@ -3,47 +3,71 @@
 
 
 .contactMe{
-    width: calc(50vw + 20px);
     width: 100vw;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
     form{
-        border-radius: 5px;
-        background-color: white;
-        color: rgb(207, 114, 129);
-        padding: 10px;
+        background-color: #deb8b8;
+        text-align: left;
+        width: 80vw;
+        margin: auto;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px #deb8b8;
+        display: flex;
+        flex-direction: column;
         .inputItems{
-            font-size: 25px;
-            display: grid;
-            text-align: left;
-            width: 60vw;
+            display: flex;
+            flex-direction: column;
             h3{
+                font-size: 23px;
+                font-weight: 100;
                 margin: 0;
                 padding: 0;
-                font-weight: 100;
+                margin-top: 10px;
             }
-            input{
-                font-family: 'Cormorant Garamond';
-                border: none;
-                border-bottom: 1px solid black;
-                font-size: 30px;
-                font-weight: bold;
-                width: 100%;
-                &::placeholder{
-                    color: lightgray
+        }
+        button{
+            width: 30%;
+            margin: auto;
+            margin-top: 20px;
+            font-size: 23px;
+            background-color: white;
+            border: 1px solid rgb(167, 110, 164);
+        }
+        textarea{
+            min-height: 100px;
+            width: calc(80vw - 6px);
+        }
+        input{
+            font-family: 'Cormorant Garamond';
+            font-size: 23px;
+            font-weight: bold;
+            border: none;
+            border-bottom: 1px solid black;
+        }
+        select{
+            font-family: 'Cormorant Garamond';
+            font-size: 23px;
+            font-weight: bold;
+            border: none;
+            border-bottom: 1px solid black;
+        }
+        option{
+            font-weight: bold;
+        }
+        @include mQ(1150px){
+            .inputItems{
+                h3{
+                    font-size: 18px;
                 }
             }
-            select{
-                font-family: 'Cormorant Garamond';
-                font-weight: bold;
-                border: none;
-                border-bottom: 1px solid black;
-                font-size: 23px;
+            input{
+                font-size: 18px;
             }
-            option{
-                font-weight: bold;
+            select{
+                font-size: 18px;
+            }
+            button{
+                font-size: 15px;
             }
         }
     }
