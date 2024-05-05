@@ -14,7 +14,7 @@ function Footer(){
             </div>
             <div className="rightfooter">
                 <p>email: kinamouaphoto@gmail.com</p>
-                <a target="_blank" href="https://www.instagram.com/kinamoua/?hl=en"><img src={instagram}/></a>
+                <a target="_blank" href="https://www.instagram.com/kinamouamclean/"><img src={instagram}/></a>
             </div>
         </div>
     )
