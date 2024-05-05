@@ -21,7 +21,7 @@ import 'aos/dist/aos.css';
 
 function RecentWork(){
 
-    const arry = [image15, image14, image16, image13, image1, image8, image9, image2, image3, image10, image5, image6, image11, image7, image12, image4];
+    const arry = [image15, image14, image16, image13, image12, image4, image3, image10, image1, image8, image9, image2, image5, image6, image11, image7];
     const [zoom, setZoom] = useState({show: false, imageInfo: null});
 
     return(
