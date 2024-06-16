@@ -16,14 +16,16 @@ import image14 from '../assets/image2.1.jpeg';
 import image15 from '../assets/image3.1.jpeg';
 import image16 from '../assets/image4.1.jpeg';
 import image17 from '../assets/image0 (5).jpeg';
-import image18 from '../assets/image1 (4).jpeg';
+import image18 from '../assets/image0 (6).jpeg';
+import image19 from '../assets/image1 (5).jpeg';
+import image20 from '../assets/image2 (2).jpeg';
 import ZoomImage from './ZoomImage';
 import '../scss/RecentWork.scss';
 import 'aos/dist/aos.css';
 
 function RecentWork(){
 
-    const arry = [image17, image18, image15, image14, image16, image13, image12, image4, image3, image10, image1, image8, image9, image2, image5, image6, image11, image7];
+    const arry = [image20, image19, image17, image18, image15, image14, image16, image13, image12, image4, image3, image10, image1, image8, image9, image2, image5, image6, image11, image7];
     const [zoom, setZoom] = useState({show: false, imageInfo: null});
 
     return(
