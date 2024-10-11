@@ -19,13 +19,17 @@ import image17 from '../assets/image0 (5).jpeg';
 import image18 from '../assets/image0 (6).jpeg';
 import image19 from '../assets/image1 (5).jpeg';
 import image20 from '../assets/image2 (2).jpeg';
+import wed920241 from '../assets/wedding9-2024.1.jpeg';
+import wed920242 from '../assets/wedding9-2024.2.jpeg';
+import wed920243 from '../assets/wedding9-2024.3.jpeg';
+import wed920244 from '../assets/wedding9-2024.4.jpeg';
 import ZoomImage from './ZoomImage';
 import '../scss/RecentWork.scss';
 import 'aos/dist/aos.css';
 
 function RecentWork(){
 
-    const arry = [image20, image19, image17, image18, image15, image14, image16, image13, image12, image4, image3, image10, image1, image8, image9, image2, image5, image6, image11, image7];
+    const arry = [wed920244, wed920242, wed920243, wed920241, image20, image19, image17, image18, image15, image14, image16, image13, image12, image4, image3, image10, image1, image8, image9, image2, image5, image6, image11, image7];
     const [zoom, setZoom] = useState({show: false, imageInfo: null});
 
     return(
