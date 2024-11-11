@@ -66,13 +66,13 @@ function Prices(){
                 <h1>Weddings</h1>
                 <div className="package">
                     <h2>ELOPEMENT PACKAGE</h2>
-                    <h3>$800 with 20% deposit</h3>
+                    <h3>$1000 with 20% deposit</h3>
                     <h3>Maximum of 20 guests</h3>
                     <h3>Covers 4 hours of the elopement</h3>
                 </div>
                 <div className="package">
                     <h2>STANDARD PACKAGE</h2>
-                    <h3>$1500 with 20% deposit</h3>
+                    <h3>$1600 with 20% deposit</h3>
                     <h3>Covers 8 hours including getting ready, ceremony, reception, and first look photos</h3>
                 </div>
             </div>
