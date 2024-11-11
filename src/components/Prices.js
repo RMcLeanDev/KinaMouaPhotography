@@ -27,7 +27,7 @@ function Prices(){
                 </div>
                 <div className="package">
                     <h2>STANDARD PACKAGE</h2>
-                    <h3>$350 with 50% deposit</h3>
+                    <h3>$375 with 50% deposit</h3>
                     <h3>1 hour session, 2 outfits, 1 location</h3>
                     <h3>Gallery of edited photos!</h3>
                 </div>
@@ -57,7 +57,7 @@ function Prices(){
                 </div>
                 <div className="package">
                     <h2>STANDARD PACKAGE</h2>
-                    <h3>$350 with 50% deposit</h3>
+                    <h3>$375 with 50% deposit</h3>
                     <h3>1 hour session, 2 outfits, 1 location</h3>
                     <h3>Gallery of edited photos!</h3>
                 </div>
